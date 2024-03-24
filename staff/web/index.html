@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Staff signup</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(34, 139, 34);
+            }
+
+            .container{
+                position: relative;
+                max-width: 500px;
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+                background: white
+            }
+
+            .container .forms{
+                padding: 30px;
+            }
+
+            .container .forms .tittle{
+                position: relative;
+                font-size: 27px;
+                font-weight: 500;
+            }
+
+            form .inputfield{
+                margin-top: 30px;
+                height: 35px;
+                width: 100%;
+                position: relative;
+                font-size: 16px;
+            }
+            .inputfield input{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                font-size: 15px;
+                border: none;
+                border-bottom: 2px solid #ccc;
+                border-top: 2px solid #fff;
+                border-radius: 10px;
+            }
+
+            form .button{
+                margin-top: 40px;
+            }
+
+            form .button input{
+                background-color: rgb(34, 139, 34);
+            }
+            form .login-signup{
+                margin-top: 30px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="forms">
+                <div class="formSignup">
+                    <p class="tittle">
+                        Sign Up
+                    </p>
+                    <form action="signupservlet" method="post">
+                        <div class="inputfield">
+                            <input type="text" placeholder="Staff ID" name='StaffID' id="StaffID" required>
+                        </div>
+                        <div class="inputfield">
+                            <input type="text" placeholder="Name" name='name' required>
+                        </div>
+                        <div class="inputfield">
+                            <input type="email" placeholder="Email" name="email" required>
+                        </div>
+                        <div class="inputfield">
+                            <input type="number" placeholder="Mobile Number" min="0" name="mobileNumber" required>
+                        </div>
+                        <div class="inputfield">
+                            <input type="password" placeholder="Create Password" name="password" id="password" required>
+                        </div>
+                        <div class="inputfield">
+                            <input type="password" placeholder="Confirm Password" name="password"  required>
+                        </div>
+                        <div class="inputfield button">
+                            <input type="submit" value="Sign Up Now">
+                        </div>
+                        <div class="login-signup">
+                            <span class="text">
+                                Already Registered?
+                                <a href="login.html" class="text signup" >Login Now</a>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
