@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>INQUIRY SYSTEM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+         <link rel="stylesheet" href="inquiry.css">
+    </head>
+       
+            
+       
+       
+   
+    <body>
+       
+        
+                        
+ 
+           <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top nav_bar">
+  <div class="container-fluid nav_container">
+     <a class="navbar-brand logo" href="#">
+         <img src="images/egertonuniversity-logo_thumb.png" alt="Logo" width="80" height="60"  class="d-inline-block align-text-top">
+         <span>ESFIMS</span>
+     </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active link_name" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link_name" href="#about">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle link_name" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item subcategory" href="./submissionForm.jsp">Tuition Fees</a></li>
+              <li><a class="dropdown-item subcategory" href="./submissionForm.jsp">Clearance</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item subcategory" href="./submissionForm.jsp">Retakes</a></li>
+              <li><a class="dropdown-item subcategory" href="./submissionForm.jsp">HELB</a></li>
+            </ul>
+          </li>
+        </ul>
+    
+         <form class="d-flex search" role="search" action="./submissionForm.jsp" method="get">
+        <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search" >
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  </div>
+</nav>
+        <section id="hero">
+            <div class="hero-div">
+            <h4>Are you in the dark?</h4>
+            <h3>Welcome to your Inquiry Hub</h3>
+            
+            <h1>Where Every Question Finds A Home</h1>
+            <form action="./submissionForm.jsp" method="get">
+                <button type="submit">Get Started</button>
+            </form>
+            </div>
+        </section>
+        
+        <section id="about">
+            <div class="heading">
+            <h2>About Us</h2>
+            </div>
+            <div class="containers">
+            
+            <div class="image">
+                <img src="images/students.jpg" alt="students">
+            </div>
+            
+                <div class="why_choose">
+                    <h5>Why Choose Us</h5>
+                    <div class="choose_container">
+                    <div class="features">
+                        <h6>Efficiency:</h6> 
+                        <p>Our streamlined platform ensures that submitting inquiries is quick and hassle-free. With just a few clicks, you can send your inquiry and expect a prompt response from our team.</p>
+                    </div>
+                    
+                    <div class="features">
+                        <h6>Security and Privacy:</h6>
+                        <p>We understand the importance of security and privacy when it comes to handling inquiries. Rest assured that your information is handled with the utmost confidentiality and security, so you can submit your inquiries with peace of mind.</p>
+                    </div>
+                    </div>
+                </div>
+            
+                
+            </div>
+          
+        </section>
+        <section id="categories">
+            
+            <div class="category">
+                <div class="_line">
+                    <h2>Categories</h2>
+                </div>
+            
+            <h3>We are more than glad to serve you</h3>
+            <p>Here are the categories of inquiries we offer</p>
+            <div class="column">
+                <div class="row ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+  <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+  <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z"/>
+</svg>
+                <h2>  Tuition Fees</h2>
+                    <p>Here we deal with;</p>
+                   
+     <ul>
+                    <li>Overpayment</li> 
+                    <li>Reflection of fees on the portal
+                </ul>
+                    <a href="submissionForm.jsp">Inquire</a>
+    </div>
+ 
+
+                
+                
+                <div class="row r2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+  <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+</svg>
+                <h2>  Clearance</h2>
+                <p>Here we deal with; </p>
+               
+  
+                <ul>
+                    <li>Any inquiry on clearance</li> 
+                   
+                </ul>
+                <a href="submissionForm.jsp">Inquire</a>
+
+    </div>
+                
+ 
+                <div class="row r3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+  <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z"/>
+</svg>
+                <h2>  HELB</h2>
+                    <p>Here we deal with;</p> 
+                    
+        <ul><li>Helb Search list</li></ul>
+         <a href="submissionForm.jsp">Inquire</a>
+
+    </div>
+  
+
+                    
+                
+                <div class="row r4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+  <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
+  <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
+</svg> 
+                <h2> Retakes</h2>
+                    <p>Here we deal with;</p>
+                   
+       <ul>
+                    <li>Payment of retakes</li> 
+                   
+                </ul>
+                <a href="submissionForm.jsp">Inquire</a>
+
+    </div>
+ 
+               
+               
+                </div>
+            </div>
+            
+                
+            
+       
+                
+                
+            
+  
+        </section>
+        <section id="footer">
+            <footer class="footer">
+                <div class="nav_links div">
+                    <h5>Links</h5>
+                    <a href="#home">Home</a>
+                     <a href="#about">About Us</a>
+                      <a href="./submissionForm.jsp">Categories</a>
+                </div>
+                <div class="contacts div">
+                    <h5>Contact Us</h5>
+                    <p>Email us @ <a href="www.info@egerton.com">info@egerton.com</a></p>
+                    <p>Phone Number: 0789876578</p>
+                </div>
+                <div class="socials div ">
+                    <h5>Follow Us</h5>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook f_icon f" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg>  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x x_icon " viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg>  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram i_icon" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+                </div>
+        </footer>
+            </section>
+        
+   
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
