@@ -1,0 +1,84 @@
+<!-<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Finance Inquiry Management System</title>
+  <style>
+    body {
+      background-color: #228B22;
+      font-family: Arial, sans-serif;
+      color: #000000;
+    }
+
+    .container {
+      width: 300px;
+      margin: 100px auto;
+      background-color: #e9ede9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    h1 {
+      text-align: center;
+      color: #000000;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #000000;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #144810;
+      color: #ffffff;
+      padding: 10px 15px;
+      border: 1px solid #144810;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0F3C0C;
+      border: 1px solid #0F3C0C;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Student Finance Inquiry Management System</h1>
+    <form action="StudentServlet" id="inquiryForm" method="post" onsubmit="return validateForm(event)">
+      <label for="registrationNumber">Registration Number:</label>
+      <input type="text" id="registrationNumber" placeholder="A13/9355/22" name="registrationNumber">
+
+      <label for="names">First name:</label>
+      <input type="text" id="firstname" placeholder="Davin" name=" firstname">
+      
+      <label for="names">Last name:</label>
+      <input type="text" id="lastname" placeholder="Mukoya" name="lastname">
+
+      <label for="emailAddress">Email Address:</label>
+      <input type="email" id="emailAddress" placeholder="musjjc@gmail.com" name="emailAddress">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="kdhwediwdo" name="password">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+    
+    <script src="newjavascript.js"></script>
+
+</body>
+</html>
